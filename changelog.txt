@@ -1,0 +1,39 @@
+=======================================
+FuseIn 1.1 - Changelog
+=======================================
+
+A summary of the class files that have
+changed in the redesign of the previous 
+iteration:
+
+---------------------------------------
+Classes added:
+---------------------------------------
+main/Services
+
+---------------------------------------
+Classes removed:
+---------------------------------------
+ui/TestUI
+main/Test
+
+---------------------------------------
+Major changes:
+---------------------------------------
+main/RemoteDrive
+services/Dropbox
+services/GDrive
+
+---------------------------------------
+Minor changes (tweaked to fit new design):
+---------------------------------------
+main/Fusein
+main/RemoteDriveFactory
+main/RemoteDriveStore
+main/RemoteFile
+main/RemoteFolder
+ui/MainWindow
+ui/UploadFileDialog
+ui/AddServiceDialog
+ui/DeleteFileDialog
+ui/DownloadFileDialog

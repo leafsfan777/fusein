@@ -1,0 +1,25 @@
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = "main.Fusein"
+sourceCompatibility = 1.7
+version = '1.0'
+jar {
+    manifest {
+        attributes 'Created-By': 'Fusein Team'
+	    attributes 'Main-Class': mainClassName
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'com.dropbox.core', name: 'dropbox-core-sdk', version: '1.7.6'
+    compile 'com.google.apis:google-api-services-drive:v2-rev113-1.17.0-rc'
+    compile 'com.google.http-client:google-http-client-jackson2:1.17.0-rc'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
